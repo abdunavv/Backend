@@ -38,5 +38,8 @@ def hello_world():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    # Start the Flask application
-    app.run(debug=True)
+    # Get the port from the environment variable PORT or use default 5000
+    port = int(os.environ.get('PORT', 5000))
+    
+    # Start the Flask application, bind to 0.0.0.0 to make it externally accessible
+    app.run(debug=True, host='0.0.0.0', port=port)
