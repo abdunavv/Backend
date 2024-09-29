@@ -22,6 +22,7 @@ dnspython==2.6.1
 docopt==0.6.2
 einops==0.8.0
 executing==2.1.0
+flask
 fastavro==1.9.7
 fastjsonschema==2.20.0
 filelock==3.16.1
